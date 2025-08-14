@@ -37,12 +37,12 @@ documentation:
 # A description of what the inputs do (e.g. red button, SPI CLK, SPI MOSI, etc).
   inputs:               
     - Toggle switch 1: 1's bit of the first addend, inverted
-    - Toggle switch 2: 1's bit of the first addend, inverted
+    - Toggle switch 2: 1's bit of the second addend, inverted
+    - Toggle switch 2: 2's bit of the first addend, inverted
     - Toggle switch 2: 2's bit of the second addend, inverted
-    - Toggle switch 2: 2's bit of the second addend, inverted
-    - The rest of the switches turn on segments, but are ignored by the adder.
+    - All other Toggles: Ignored by the adder.
     
-# A description of what the outputs do (e.g. status LED, SPI MISO, etc)
+# A description of what the outputs do (e.g. status LED, SPI MISO, etc)          
   outputs:
     - segment a
     - segment b
