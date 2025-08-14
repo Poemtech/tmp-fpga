@@ -21,29 +21,27 @@ yaml_version: 4
 #
 # Here is a great example: https://github.com/davidsiaw/tt02-davidsiaw-stackcalc/blob/38c5647f83aad2aec675d566aa3d67b98f0aac81/info.yaml
 documentation: 
-  author:       "Your name here"                 # Your name
-  title:        "Wokwi FPGA bitstream"           # Project title
+  author:       "Arnold Stillman"                 # Your name
+  title:        "2-Bit Adder Demo"           # Project title
   language:     "Wokwi"                          # other examples include Verilog, Amaranth, VHDL, etc
-  description:  "The project generates an FPGA bitstream for a Wokwi based Tiny Tapeout design."      # Short description of what your project does
+  description:  "This is the demo Tiny Tapeout design."      # Short description of what your project does
 
 # Longer description of how the project works. You can use standard markdown format.
   how_it_works: |
-      Explain how your project works
+      A 2-bit full adder adds two input bits to provide a sum and carry bit.
 
 # Instructions on how someone could test your project, include things like what buttons do what and how to set the clock if needed
   how_to_test:  |
-      Explain how to test your project
+      Toggle the input switches to see the LEDs light up.
 
 # A description of what the inputs do (e.g. red button, SPI CLK, SPI MOSI, etc).
   inputs:               
-    - none
-    - none
-    - none
-    - none
-    - none
-    - none
-    - none
-    - none
+    - Toggle switch 1: 1's bit of the first addend, inverted
+    - Toggle switch 2: 1's bit of the first addend, inverted
+    - Toggle switch 2: 2's bit of the second addend, inverted
+    - Toggle switch 2: 2's bit of the second addend, inverted
+    - The rest of the switches turn on segments, but are ignored by the adder.
+    
 # A description of what the outputs do (e.g. status LED, SPI MISO, etc)
   outputs:
     - segment a
@@ -54,6 +52,9 @@ documentation:
     - segment f
     - segment g
     - dot
+    - left LED, carry bit
+    - middle LED, 2's bit
+    - right LED, 1's bit
 # A description of what the bidirectional I/O pins do (e.g. I2C SDA, I2C SCL, etc)
   bidirectional:
     - none
@@ -66,9 +67,9 @@ documentation:
     - none
 
 # The following fields are optional
-  tag:          ""      # comma separated list of tags: test, encryption, experiment, clock, animation, utility, industrial, pwm, fpga, alu, microprocessor, risc, riscv, sensor, signal generator, fft, filter, music, bcd, sound, serial, timer, random number generator, calculator, decoder, counter, puzzle, multiplier, game, oscillator,
+  tag:          "demo, tapeout test, 2-bit adder"      # comma separated list of tags: test, encryption, experiment, clock, animation, utility, industrial, pwm, fpga, alu, microprocessor, risc, riscv, sensor, signal generator, fft, filter, music, bcd, sound, serial, timer, random number generator, calculator, decoder, counter, puzzle, multiplier, game, oscillator,
   external_hw:  ""      # Describe any external hardware needed
-  discord:      ""      # Your discord handle, used for communication and automatically assigning tapeout role after a submission
+  discord:      "#poemtech"      # Your discord handle, used for communication and automatically assigning tapeout role after a submission
   doc_link:     ""      # URL to longer form documentation, eg the README.md in your repository
   clock_hz:     0       # Clock frequency in Hz (if required)
   picture:      ""      # relative path to a picture in your repository (must be 512kb or less)
