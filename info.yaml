@@ -13,19 +13,19 @@ project:
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
   # Inputs
-  ui[0]: ""
-  ui[1]: ""
-  ui[2]: ""
-  ui[3]: ""
+  ui[0]: "D1-1"
+  ui[1]: "D2-1"
+  ui[2]: "D1-2"
+  ui[3]: "D2-2"
   ui[4]: ""
   ui[5]: ""
   ui[6]: ""
   ui[7]: ""
 
   # Outputs
-  uo[0]: ""
-  uo[1]: ""
-  uo[2]: ""
+  uo[0]: "LSB"
+  uo[1]: "MSB"
+  uo[2]: "C"
   uo[3]: ""
   uo[4]: ""
   uo[5]: ""
