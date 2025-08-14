@@ -2,6 +2,7 @@
 # Tiny Tapeout project information
 project:
   wokwi_id:    439199417878360065
+  title: "DEMO"
 # If using an HDL, set wokwi_id as 0 and uncomment and list your source files here. 
 # Source files must be in ./src and you must list each source file separately
 #  source_files:        
