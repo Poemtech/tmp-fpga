@@ -5,6 +5,7 @@ project:
   title: "DEMO"
   author: "Arnold Stillman"
   description:  "This is the demo Tiny Tapeout design."      # Short description of what your project does
+  language: "Wokwi"
   
 # If using an HDL, set wokwi_id as 0 and uncomment and list your source files here. 
 # Source files must be in ./src and you must list each source file separately
